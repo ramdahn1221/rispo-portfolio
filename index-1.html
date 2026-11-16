@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171411">
+  <meta name="description" content="RISPO — Barista portfolio. Coffee craft, latte art, and hospitality.">
+  <title>RISPO — Barista Portfolio</title>
+  <style>
+    :root{--bg:#15120f;--panel:#211b16;--panel2:#2b211a;--cream:#f4eadb;--muted:#b9a998;--gold:#c69b69;--line:rgba(244,234,219,.13)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-size:1.45rem;font-weight:900;letter-spacing:.18em}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--cream)}
+    .hero{min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:75px 0}
+    .eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.76rem;font-weight:700}
+    h1{font-size:clamp(3.8rem,9vw,7.3rem);line-height:.92;letter-spacing:-.07em;margin:22px 0}
+    h1 span{color:var(--gold)}.lead{font-size:1.12rem;color:var(--muted);max-width:560px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:13px 20px;border-radius:3px;font-weight:700;border:1px solid var(--gold)}.btn.primary{background:var(--gold);color:#1b140e}.btn.secondary{color:var(--cream)}
+    .visual{min-height:430px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,#705039 0,#38281d 35%,#211912 72%);display:grid;place-items:center;position:relative;overflow:hidden}
+    .cup{width:220px;height:155px;border-radius:12px 12px 65px 65px;background:linear-gradient(145deg,#f5e9d6,#bda88d);position:relative;box-shadow:0 28px 55px #09070599;transform:rotate(-7deg)}
+    .cup:before{content:"";position:absolute;width:75px;height:75px;border:15px solid #cdb99d;border-left:0;border-radius:0 50% 50% 0;right:-59px;top:24px}
+    .coffee{position:absolute;inset:10px 12px auto;height:42px;border-radius:50%;background:radial-gradient(ellipse,#f8efe0 0 18%,#a77b54 20% 65%,#5b3925 68%);box-shadow:inset 0 4px 9px #2c1b10}
+    .visual-label{position:absolute;bottom:24px;left:24px;color:#ead8c2;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase}
+    section{padding:85px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:35px}h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;margin:12px 0 16px;letter-spacing:-.04em}.section-head p,.about p{color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}.quote{border-left:2px solid var(--gold);padding:18px 25px;background:var(--panel);font-size:1.25rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);padding:25px;border:1px solid var(--line);min-height:185px}.card small{color:var(--gold);letter-spacing:.14em;text-transform:uppercase}.card h3{margin:12px 0 8px}.card p{margin:0;color:var(--muted);font-size:.94rem}
+    .timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.job{padding:22px;background:var(--panel);border:1px solid var(--line)}.job h3{margin:0 0 5px}.job p{margin:0;color:var(--muted)}.job .date{font-size:.8rem;color:var(--gold);letter-spacing:.1em}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{aspect-ratio:1/1;background:linear-gradient(145deg,#493323,#211912);border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:20px;color:#d7b995}.tile strong{display:block;font-size:1.1rem}.tile span{font-size:.8rem;color:var(--muted)}
+    .contact{background:var(--panel);padding:38px;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:25px}
+    footer{padding:28px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:.78rem}.hero{grid-template-columns:1fr;padding:60px 0;gap:35px}.visual{min-height:330px}.about-grid,.timeline{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.contact{align-items:flex-start;flex-direction:column}}
+    @media(max-width:420px){.navlinks a:nth-child(2){display:none}.wrap{width:min(100% - 30px,1100px)}h1{font-size:4rem}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Navigasi utama">
+      <a class="brand" href="#">RIS<span>PO</span></a>
+      <div class="navlinks"><a href="#about">About</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Barista · Coffee craft · Hospitality</div>
+        <h1>THE ART<br>OF <span>COFFEE.</span></h1>
+        <p class="lead">Saya RISPO — seorang barista yang menikmati proses di balik setiap cangkir: dari memahami karakter kopi, menyempurnakan ekstraksi, hingga menyajikan pengalaman yang berkesan.</p>
+        <div class="actions"><a class="btn primary" href="#journey">Explore my journey</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+      </div>
+      <div class="visual" role="img" aria-label="Ilustrasi secangkir kopi dengan nuansa hangat">
+        <div class="cup"><div class="coffee"></div></div>
+        <div class="visual-label">Crafted with patience · Served with passion</div>
+      </div>
+    </div>
+    <section id="about"><div class="wrap about-grid">
+      <div class="section-head"><div class="eyebrow">01 / About RISPO</div><h2>More than a cup of coffee.</h2></div>
+      <div class="about"><p>Perjalanan saya di dunia kopi dibangun melalui pengalaman langsung di lingkungan coffee shop, belajar dari rekan kerja, melayani pelanggan, dan terus mengasah keterampilan sebagai barista.</p><p>Bagi saya, kopi bukan hanya tentang rasa. Ini tentang ketelitian, konsistensi, kreativitas, dan keramahan dalam setiap pelayanan.</p><div class="quote">“Setiap cangkir punya cerita. Tugas barista adalah membuatnya berarti.”</div></div>
+    </div></section>
+    <section id="journey"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">02 / Career journey</div><h2>Every step shapes the craft.</h2><p>Pengalaman profesional yang membentuk perjalanan RISPO di industri kopi.</p></div>
+      <div class="timeline">
+        <article class="job"><div class="date">2023 · 6 MONTHS</div><h3>Cascara</h3><p>Pengalaman awal membangun dasar keterampilan dan pemahaman operasional coffee shop.</p></article>
+        <article class="job"><div class="date">2023 — 2024</div><h3>Wedang Cafe</h3><p>Melanjutkan perjalanan, memperkuat keterampilan pelayanan dan pembuatan minuman.</p></article>
+        <article class="job"><div class="date">CAREER EXPERIENCE</div><h3>Sukha</h3><p>Bagian dari perjalanan dan proses pengembangan diri di dunia hospitality.</p></article>
+        <article class="job"><div class="date">CAREER EXPERIENCE</div><h3>Sugar Sip</h3><p>Pengalaman bekerja dan terus mengasah konsistensi dalam penyajian minuman.</p></article>
+        <article class="job"><div class="date">CAREER EXPERIENCE</div><h3>Project Coffe</h3><p>Melanjutkan eksplorasi keterampilan dan pengalaman di lingkungan coffee shop.</p></article>
+        <article class="job"><div class="date">CAREER EXPERIENCE</div><h3>Patron Space</h3><p>Mengembangkan kreativitas minuman, termasuk kontribusi pada ide Strawberry Americano.</p></article>
+      </div>
+    </div></section>
+    <section id="skills"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">03 / What I do</div><h2>Skills behind the bar.</h2><p>Fokus pada kualitas produk, detail penyajian, dan pengalaman pelanggan.</p></div>
+      <div class="cards">
+        <article class="card"><small>01</small><h3>Latte Art</h3><p>Menuangkan susu dengan kontrol dan kreativitas untuk menghasilkan latte art yang rapi.</p></article>
+        <article class="card"><small>02</small><h3>Beverage Creation</h3><p>Eksplorasi kombinasi rasa dan pengembangan ide minuman.</p></article>
+        <article class="card"><small>03</small><h3>Customer Service</h3><p>Mengutamakan keramahan, komunikasi, dan konsistensi pelayanan.</p></article>
+      </div>
+    </div></section>
+    <section id="gallery"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">04 / Coffee moments</div><h2>Made at the bar.</h2><p>Ruang untuk menampilkan karya latte art, racikan minuman, dan momen di balik bar.</p></div>
+      <div class="gallery"><div class="tile"><div><strong>Latte Art</strong><span>Pour · Practice · Perfect</span></div></div><div class="tile"><div><strong>Signature Drinks</strong><span>Flavor exploration</span></div></div><div class="tile"><div><strong>Behind the Bar</strong><span>Daily coffee moments</span></div></div></div>
+    </div></section>
+    <section id="contact"><div class="wrap contact">
+      <div><div class="eyebrow">05 / Let's connect</div><h2>Let's make good coffee happen.</h2><p style="color:var(--muted);margin-bottom:0">Untuk kolaborasi, kesempatan kerja, atau sekadar berbincang tentang kopi.</p></div>
+      <a class="btn primary" href="https://www.instagram.com/x.iiky/" target="_blank" rel="noopener">Instagram @x.iiky ↗</a>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> RISPO · Barista Portfolio</span><span>Crafted with passion for coffee.</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
